@@ -1,0 +1,24 @@
+{
+  "name": "nmbrs",
+  "version": "1.0.0",
+  "description": "An npm module to prettify numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagrawl/nmbrs.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "numbers"
+  ],
+  "author": "Yash Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagrawl/nmbrs/issues"
+  },
+  "homepage": "https://github.com/yagrawl/nmbrs#readme"
+}
