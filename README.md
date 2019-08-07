@@ -1,4 +1,6 @@
-# nmbrs [![Build Status](https://travis-ci.com/yagrawl/nmbrs.svg?branch=master)](https://travis-ci.com/yagrawl/nmbrs)
+# nmbrs
+
+[![Build Status](https://travis-ci.com/yagrawl/nmbrs.svg?branch=master)](https://travis-ci.com/yagrawl/nmbrs) ![npm](https://img.shields.io/npm/v/nmbrs)
 
 A node module to prettify numbers. eg. `1200` ~ `1.2k`
 

@@ -33,4 +33,14 @@ describe('Prettify Numbers', function() {
     assert.equal('-3.4B', nmbrs(-3400000000));
     assert.equal('-8.7T', nmbrs(-8700000000000));
   });
+
+  it('Functions with empty params passed in', function(){
+    assert.equal('2.3K', nmbrs(2304, {}));
+  });
+
+  it('Parses number with more than 1 decimal number', function(){
+    assert.equal('2.3K', nmbrs(2304));
+    assert.equal('-2.3K', nmbrs(-2304));
+    assert.equal('6.5M', nmbrs(6504965));
+  });
 });

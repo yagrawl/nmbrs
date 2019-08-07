@@ -14,7 +14,11 @@ const nmbrs = (num, params) => {
     exponent += 1;
   }
 
-  decimal_num = sign + decimal_num.toString();
+  if(decimal_num.toString().length > 3) {
+    decimal_num = decimal_num.toString().slice(0, 3);
+  }
+
+  decimal_num = sign + decimal_num;
   num_unit = num_units[exponent.toString()];
 
   let prettified_num = decimal_num + num_unit;
