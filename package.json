@@ -4,7 +4,7 @@
   "description": "An npm module to prettify numbers",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/yagrawl/nmbrs/issues"
   },
-  "homepage": "https://github.com/yagrawl/nmbrs#readme"
+  "homepage": "https://github.com/yagrawl/nmbrs#readme",
+  "dependencies": {
+    "mocha": "^6.2.0"
+  }
 }
