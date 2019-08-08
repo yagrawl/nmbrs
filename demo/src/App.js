@@ -11,6 +11,11 @@ class App extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
+  }
+
+  handleFocus(e) {
+    e.target.select();
   }
 
   handleChange(e) {
@@ -36,7 +41,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p className="title"><span className="main-title">nmbrs</span> | demo</p>
+          <p className="title"><span className="main-title">NMBRS</span> | demo</p>
           <p className="details">
             An <a className="hover nodec"
                   href="https://www.npmjs.com/package/nmbrs"
@@ -50,7 +55,8 @@ class App extends Component {
             type={"number"}
             value={this.state.input}
             onChange={this.handleChange}
-            placeholder={"Enter Input"} />
+            onFocus={this.handleFocus}
+            placeholder={"Enter a Number"} />
           {this.demoNmbrs()}
           <Twitter title="NMBRS - An npm module to prettify large numbers."
                    url="https://github.com/yagrawl/nmbrs" />

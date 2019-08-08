@@ -42,8 +42,9 @@
 }
 
 .input-box::placeholder {
-  font-weight: 100;
-  color: #757575;
+  font-weight: 200;
+  font-size: 24px;
+  color: #7F8BA3;
 }
 
 .input-box:focus, .button:focus {
@@ -58,13 +59,14 @@
 
 .title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 24px;
   color: #7F8BA3;
 }
 
 .main-title {
   color: #D66060;
+  font-weight: 700;
 }
 
 .number {
@@ -100,4 +102,12 @@
 
 .twitter-share-button:hover {
   background-color: #1A94E0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }
