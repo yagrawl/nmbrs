@@ -56,4 +56,8 @@ describe('Prettify Numbers', function() {
     assert.equal('12.3s', nmbrs(12300000000000000000000));
     assert.equal('12.3S', nmbrs(12300000000000000000000000));
   });
+
+  it('Handles non number input and returns a 0', function() {
+    assert.equal('0', nmbrs('test'));
+  });
 });

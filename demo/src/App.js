@@ -36,7 +36,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p className="title">nmbrs | demo</p>
+          <p className="title"><span className="main-title">nmbrs</span> | demo</p>
+          <p className="details">
+            An <a className="hover nodec"
+                  href="https://www.npmjs.com/package/nmbrs"
+                  target="_blank"
+                  rel="noopener noreferrer"> npm module </a>
+            &nbsp;to prettify numbers.
+          </p>
           <input
             className={"input-box input-box-option"}
             name={"input"}

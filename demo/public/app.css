@@ -2,8 +2,15 @@
   text-align: center;
 }
 
-a {
+.nodec {
   text-decoration: none !important;
+  color: #7F8BA3;
+}
+
+.hover:hover {
+  background: #21242A;
+	padding: 1px 1px;
+  border-radius: 5px;
 }
 
 .App-header {
@@ -43,6 +50,12 @@ a {
   outline: none;
 }
 
+@media screen and (max-width: 800px) {
+  .input-box {
+    width: 80%;
+  }
+}
+
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -50,11 +63,23 @@ a {
   color: #7F8BA3;
 }
 
+.main-title {
+  color: #D66060;
+}
+
 .number {
   font-family: 'Montserrat', sans-serif;
   color: #7F8BA3;
   font-weight: 700;
   font-size: 96px;
+}
+
+.details {
+  font-family: 'Montserrat', sans-serif;
+  color: #7F8BA3;
+  font-weight: 200;
+  font-size: 14px;
+  margin-top: 0px;
 }
 
 .credits {

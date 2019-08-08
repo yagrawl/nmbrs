@@ -1,4 +1,8 @@
 const nmbrs = (num, params) => {
+  if (isNaN(num)) {
+    return '0';
+  }
+
   const num_units = ['', 'K', 'M', 'B', 't', 'q', 'Q', 's', 'S', 'o', 'n', 'd',
                      'U', 'D', 'T', 'Qt', 'Qd', 'Sd', 'St', 'O', 'n', 'v', 'c'];
   const weight = 1000;
