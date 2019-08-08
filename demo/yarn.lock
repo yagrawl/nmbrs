@@ -6367,10 +6367,10 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-nmbrs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nmbrs/-/nmbrs-1.0.0.tgz#9c7ab9617fea86948aff50541fa9fe46ef150f66"
-  integrity sha512-qvilbuGuu/3hNpadwUn3FRWUNrKcoYpmHm6zvQP+WC4dKUvFQV4U/32j17oAv+XLCMVmLN80fnpSS6FGKh3nUA==
+nmbrs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nmbrs/-/nmbrs-1.0.2.tgz#a71168ba3066b93382bdbe14a946d47da18d5294"
+  integrity sha512-WLNWm3TUd/twlBy+8kfWj42m5eltKm+Mu8hJf79f2boqvMfpGA4YNKww2Ke5PjJzXW2ecrcigQASmkv32P8EaQ==
   dependencies:
     mocha "^6.2.0"
 

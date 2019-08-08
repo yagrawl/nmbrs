@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import nmbrs from 'nmbrs';
+import Twitter from './twitter';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class App extends Component {
     let nmbrsValue = nmbrs(this.state.input);
 
     return(
-      <p>{nmbrsValue}</p>
+      <p className="number">{nmbrsValue}</p>
     );
   }
 
@@ -36,6 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <p className="title">nmbrs | demo</p>
           <input
             className={"input-box input-box-option"}
             name={"input"}
@@ -44,6 +45,8 @@ class App extends Component {
             onChange={this.handleChange}
             placeholder={"Enter Input"} />
           {this.demoNmbrs()}
+          <Twitter title="NMBRS - An npm module to prettify large numbers."
+                   url="https://github.com/yagrawl/nmbrs" />
         </header>
       </div>
     );
