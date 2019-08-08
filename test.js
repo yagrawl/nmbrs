@@ -88,14 +88,5 @@ describe('Prettify Numbers', function() {
     assert.equal('1S', nmbrs(Math.pow(10, 24)));
     assert.equal('1o', nmbrs(Math.pow(10, 27)));
     assert.equal('1n', nmbrs(Math.pow(10, 30)));
-    assert.equal('1d', nmbrs(Math.pow(10, 33)));
-    assert.equal('1U', nmbrs(Math.pow(10, 36)));
-    assert.equal('1D', nmbrs(Math.pow(10, 39)));
-    assert.equal('1T', nmbrs(Math.pow(10, 42)));
-    assert.equal('1Qt', nmbrs(Math.pow(10, 45)));
-    assert.equal('1Qd', nmbrs(Math.pow(10, 48)));
-    assert.equal('1Sd', nmbrs(Math.pow(10, 51)));
-    assert.equal('1St', nmbrs(Math.pow(10, 54)));
-    assert.equal('1O', nmbrs(Math.pow(10, 57)));
   });
 });
