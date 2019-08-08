@@ -76,6 +76,11 @@
   font-size: 96px;
 }
 
+.number::selection {
+  background: white;
+  color: #21252B;
+}
+
 .details {
   font-family: 'Montserrat', sans-serif;
   color: #7F8BA3;
