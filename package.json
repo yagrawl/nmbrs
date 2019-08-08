@@ -1,6 +1,6 @@
 {
   "name": "nmbrs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An npm module to prettify numbers",
   "main": "index.js",
   "scripts": {

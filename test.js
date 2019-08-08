@@ -6,7 +6,7 @@ describe('Prettify Numbers', function() {
     assert.equal('1.2K', nmbrs(1200));
     assert.equal('5.6M', nmbrs(5600000));
     assert.equal('3.4B', nmbrs(3400000000));
-    assert.equal('8.7T', nmbrs(8700000000000));
+    assert.equal('8.7t', nmbrs(8700000000000));
   });
 
   it('Parses number less than 1000 without a unit', function(){
@@ -31,7 +31,7 @@ describe('Prettify Numbers', function() {
     assert.equal('-1.2K', nmbrs(-1200));
     assert.equal('-5.6M', nmbrs(-5600000));
     assert.equal('-3.4B', nmbrs(-3400000000));
-    assert.equal('-8.7T', nmbrs(-8700000000000));
+    assert.equal('-8.7t', nmbrs(-8700000000000));
   });
 
   it('Functions with empty params passed in', function(){
@@ -48,5 +48,12 @@ describe('Prettify Numbers', function() {
     assert.equal('23.0K', nmbrs(23041));
     assert.equal('-23.0K', nmbrs(-23042));
     assert.equal('65.0M', nmbrs(65049655));
+  });
+
+  it('Handles numbers bigger than a trillion correctly', function() {
+    assert.equal('12.3q', nmbrs(12300000000000000));
+    assert.equal('12.3Q', nmbrs(12300000000000000000));
+    assert.equal('12.3s', nmbrs(12300000000000000000000));
+    assert.equal('12.3S', nmbrs(12300000000000000000000000));
   });
 });
