@@ -1,28 +1,28 @@
 const nmbrs = (num, params) => {
-  const num_units = {'3': 'K', '6': 'M', '9': 'B', '12': 'T'};
-
-  if(num >= 0 && num < 1000 || num < 0 && num > -1000) {
-    return num.toString();
-  }
+  const num_units = ['', 'K', 'M', 'B', 'T'];
+  const weight = 1000;
+  const sign = (num >= 0) ? '' : '-';
 
   let exponent = 0;
-  let decimal_num = Math.abs(num);
-  let sign = (num >= 0) ? '' : '-';
+  let num_abs = Math.abs(num);
+  let num_decimal_formatted;
 
-  while(decimal_num >= 10) {
-    decimal_num /= 10;
+  while(num_abs > weight) {
+    num_abs /= weight;
     exponent += 1;
   }
 
-  if(decimal_num.toString().length > 3) {
-    decimal_num = decimal_num.toString().slice(0, 3);
+  num_abs = num_abs.toString();
+  let decimal_index = num_abs.indexOf('.');
+
+  if(decimal_index !== -1) {
+    num_decimal_formatted = num_abs.slice(0, decimal_index + 2);
+  } else {
+    num_decimal_formatted = num_abs;
   }
 
-  decimal_num = sign + decimal_num;
-  num_unit = num_units[exponent.toString()];
-
-  let prettified_num = decimal_num + num_unit;
-  return prettified_num;
+  let num_formatted = sign + num_decimal_formatted + num_units[exponent];
+  return num_formatted;
 }
 
 module.exports = nmbrs;

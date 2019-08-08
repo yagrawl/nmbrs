@@ -43,4 +43,10 @@ describe('Prettify Numbers', function() {
     assert.equal('-2.3K', nmbrs(-2304));
     assert.equal('6.5M', nmbrs(6504965));
   });
+
+  it('Parses number in 10s and 100s of KMBT', function() {
+    assert.equal('23.0K', nmbrs(23041));
+    assert.equal('-23.0K', nmbrs(-23042));
+    assert.equal('65.0M', nmbrs(65049655));
+  });
 });
